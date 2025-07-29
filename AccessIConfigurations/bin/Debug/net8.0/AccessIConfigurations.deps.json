@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "AccessIConfigurations/1.0.0": {
+        "runtime": {
+          "AccessIConfigurations.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AccessIConfigurations/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

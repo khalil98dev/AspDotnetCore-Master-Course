@@ -1,0 +1,25 @@
+
+@BaseUrl = http://localhost:5259
+###get Single value-by-key 
+
+GET {{BaseUrl}}/get-value-by-key;
+
+
+###get get-ConnectionString by key 
+
+GET {{BaseUrl}}/get-ConnectionString
+
+###get-ConnectionStringByMethode
+
+GET {{BaseUrl}}/get-ConnectionStringByMethode
+
+###Get-SingleValueByMethode 
+GET  {{BaseUrl}}/get-SingleValueByMethode
+
+###get-ObjectSection
+
+GET  {{BaseUrl}}/get-ObjectSection
+
+###Get Section By Binding  
+GET  {{BaseUrl}}/get-BindValues
+

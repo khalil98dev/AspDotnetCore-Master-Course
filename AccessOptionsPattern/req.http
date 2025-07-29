@@ -1,0 +1,15 @@
+
+@BaseUrl = http://localhost:5296
+###get Single value-by-key 
+
+GET  {{BaseUrl}}/getOptiions 
+
+
+### getOptions-SnapShot
+
+get {{BaseUrl}}/getOptions-SnapShot
+
+### /getOptions-Monitor 
+
+Get {{BaseUrl}}/getOptions-Monitor
+
