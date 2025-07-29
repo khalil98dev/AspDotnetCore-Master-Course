@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "qLhw+tbdndtKCQjvX3KxFiijBKr+FMLfOMSWyhrmmoM=",
+  "Source": "SystemEnvirementVariableProvider",
+  "BasePath": "_content/SystemEnvirementVariableProvider",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
