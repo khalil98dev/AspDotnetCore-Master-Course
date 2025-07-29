@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "iSVW2fj/MAHvMpku9ZomhI0o+VlEq2jqi4WKKD9+qn4=",
+  "Source": "CommandLineProvider",
+  "BasePath": "_content/CommandLineProvider",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

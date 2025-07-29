@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "ojBZ6B4FATlTUu/XcxrRX5J2msEvu8iakmn8sEoBltY=",
+  "Source": "FileBasedProvider",
+  "BasePath": "_content/FileBasedProvider",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

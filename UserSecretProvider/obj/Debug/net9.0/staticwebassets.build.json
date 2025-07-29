@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "U9QM3n5KL9qTXt/g9qJ/fY6tOYJhrHlN5r1NwSY7r44=",
+  "Source": "UserSecretProvider",
+  "BasePath": "_content/UserSecretProvider",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

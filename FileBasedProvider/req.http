@@ -1,0 +1,13 @@
+
+@BaseURL = http://localhost:5212
+GEt {{BaseURL}}/ApplicationDevName
+
+### Custom Configuration Json File 
+
+GEt {{BaseURL}}/Githup
+
+
+### Custom Configuration Ini File 
+
+GEt {{BaseURL}}/Generalize:Enterprise
+

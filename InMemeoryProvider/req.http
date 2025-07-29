@@ -1,0 +1,7 @@
+
+@BaseURL = http://localhost:5147
+GEt {{BaseURL}}/MaxConnections
+
+
+
+
