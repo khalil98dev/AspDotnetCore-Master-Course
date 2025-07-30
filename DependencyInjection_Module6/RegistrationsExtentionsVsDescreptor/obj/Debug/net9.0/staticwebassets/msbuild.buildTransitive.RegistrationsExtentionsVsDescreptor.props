@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\RegistrationsExtentionsVsDescreptor.props" />
+</Project>

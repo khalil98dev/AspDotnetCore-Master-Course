@@ -1,0 +1,10 @@
+
+@BaseURL = http://localhost:5174
+### 
+Get {{BaseURL}}/GetPersonName/12
+### 
+
+GEt {{BaseURL}}/GetEmployeeFullName/12
+### 
+
+Get {{BaseURL}}/GetStudentFullName/12
