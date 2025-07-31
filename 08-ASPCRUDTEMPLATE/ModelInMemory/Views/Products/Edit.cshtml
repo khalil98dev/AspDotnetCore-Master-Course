@@ -1,0 +1,22 @@
+@model Modeles.Product; 
+@{
+    ViewData["Title"] = "Prodyct Informations";
+}
+
+<div class="card">
+    <div class="card-body">
+        <dl class="rox">
+            <dt class="col-sm-3">ID</dt>
+            <dt class="col-sm-9" aria-readonly="true">@Model.ID</dt>
+
+            <dt class="col-sm-3">Name</dt>
+            <dt class="col-sm-9">@Model.Name</dt>
+
+            <dt class="col-sm-3">Price</dt>
+            <dt class="col-sm-9">@Model.Price</dt>
+        </dl>
+        <a asp-action="Index" class="btn btn-secondary">Back</a>
+        <a asp-action="Edit" class="btn btn-primary" asp-route-id="@Model.ID">Edit</a>
+        <a asp-action="Delete" class="btn btn-danger" asp-route-id="@Model.ID">Delete</a>
+    </div>
+</div>

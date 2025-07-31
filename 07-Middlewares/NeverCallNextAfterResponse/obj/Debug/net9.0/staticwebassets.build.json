@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "2TxzYMf4REfERgvFRW7WnYmhItzdwGWG6P591t+JPYM=",
+  "Source": "NeverCallNextAfterResponse",
+  "BasePath": "_content/NeverCallNextAfterResponse",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
