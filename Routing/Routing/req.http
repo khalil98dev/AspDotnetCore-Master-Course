@@ -1,0 +1,15 @@
+
+@BaseUrl = http://localhost:5035 
+
+### 
+
+GET {{BaseUrl}}/Products
+
+
+### 
+
+GET {{BaseUrl}}/Api/Products
+
+###
+GET {{BaseUrl}}/Route-Table
+

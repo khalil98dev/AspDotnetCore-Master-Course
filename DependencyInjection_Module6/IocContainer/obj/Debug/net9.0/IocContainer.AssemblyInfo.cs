@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IocContainer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0035176707639877c19b965d4986948e9090f103")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0d6e2e1ab94c561b404806a9efc75c19852924ee")]
 [assembly: System.Reflection.AssemblyProductAttribute("IocContainer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IocContainer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
