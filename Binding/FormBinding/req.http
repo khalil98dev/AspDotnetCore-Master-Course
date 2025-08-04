@@ -1,0 +1,25 @@
+
+
+@BaseUrl = http://localhost:5093; 
+
+### 
+POST {{BaseUrl}}/minimal-Invoice
+Content-Type: multipart/form-data; boundary=MyBoundary
+
+--MyBoundary
+Content-Disposition: form-data; name="file"; filename="Test.png"
+Content-Type: image/png
+< D:/Test.png
+--MyBoundary--
+
+### 
+POST {{BaseUrl}}/Controller-Invoice
+Content-Type: multipart/form-data; boundary=Myboundary
+
+--Myboundary
+Content-Disposition: form-data;name="file";filename="Test.png"; 
+Content-Type: image/png; 
+
+< C:\Users\GNT\Pictures\Screenshots\Test.png
+--Myboundary--
+

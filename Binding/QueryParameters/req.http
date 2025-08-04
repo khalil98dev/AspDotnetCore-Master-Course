@@ -1,0 +1,8 @@
+@BaseUrl = http://localhost:5205
+
+###
+GET {{BaseUrl}}/Books/41?Page=1&PageSize=1222
+
+### 
+GET {{BaseUrl}}/Date?date=2025-01-01,2025-2-28
+
