@@ -11,8 +11,10 @@ builder.Services.AddSingleton<ProductRepository>();
 
 builder.Services.Configure<JsonOptions>(Options =>
 {
-    Options.SerializerOptions.DefaultIgnoreCondition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull;
+    Options.SerializerOptions.DefaultIgnoreCondition =
+    System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull;
 });
+
 
 
 var app = builder.Build();

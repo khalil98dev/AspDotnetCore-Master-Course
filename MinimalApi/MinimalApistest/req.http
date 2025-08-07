@@ -8,7 +8,7 @@ OPTIONS {{BaseUrl}}/api/products
 HEAD {{BaseUrl}}/api/products/{{ProductID}}
 
 ###
-GEt {{BaseUrl}}/api/products/{{ProductID}}
+GEt {{BaseUrl}}/api/products/{{ProductID}}?includeReviews=true
 
 ###
 GET {{BaseUrl}}/api/products?page=3&pageSize=3
