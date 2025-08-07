@@ -1,0 +1,52 @@
+@BaseUrl = http://localhost:5291
+@ProductID = 7d2f3b91-3f2d-4f0a-92c1-4567890abcde
+### 
+OPTIONS {{BaseUrl}}/api/products 
+
+
+### 
+HEAD {{BaseUrl}}/api/products/{{ProductID}}
+
+###
+GEt {{BaseUrl}}/api/products/{{ProductID}}
+
+###
+GET {{BaseUrl}}/api/products?page=3&pageSize=3
+
+### 
+POST {{BaseUrl}}/api/products HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Product 1",
+    "price": 100.0
+}
+
+
+###
+PUT {{BaseUrl}}/api/products/{{ProductID}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Frit oumlet",
+    "price": 120.0
+}
+###
+PATCH {{BaseUrl}}/api/products/{{ProductID}} HTTP/1.1
+Content-Type: application/json-patch+json
+
+
+### 
+DELETE {{BaseUrl}}/api/products/75066884-bd82-432a-98e9-b8a049635c6f 
+
+
+### 
+POST  {{BaseUrl}}/api/products/process HTTP/1.1
+
+
+### 
+GET {{BaseUrl}}/api/products/status/4a37aed0-fe1a-4f7c-857f-5af36c4726bf
+
+
+###
+GET {{BaseUrl}}/api/products/csvExporter
