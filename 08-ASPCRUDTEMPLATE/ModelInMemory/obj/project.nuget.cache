@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Slj1aC7wIZ4=",
+  "dgSpecHash": "DbP4PlnPDAw=",
   "success": true,
-  "projectFilePath": "D:\\AspCoreFirstProject\\Configurations\\AspDotnetCore-Master-Course\\08-ASPCRUDTEMPLATE\\ModelInMemory\\ModelInMemory.csproj",
+  "projectFilePath": "D:\\AspDotnetCourse\\Configurations\\08-ASPCRUDTEMPLATE\\ModelInMemory\\ModelInMemory.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

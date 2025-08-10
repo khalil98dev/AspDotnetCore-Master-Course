@@ -1,0 +1,12 @@
+@BaseURl =  http://localhost:5216
+@productId = a3f1c2d4-5b6e-4f7a-8c9d-1e2f3a4b5c6d
+
+### Request Get Product By ID 
+
+GET {{BaseURl}}/api/products/{{productId}}
+Accept:  application/json;api-version: 1.0
+
+### Request Get Product By ID  vertsion 2
+
+GET {{BaseURl}}/api/products/{{productId}}
+Accept: : :application/json; api-version=2.0

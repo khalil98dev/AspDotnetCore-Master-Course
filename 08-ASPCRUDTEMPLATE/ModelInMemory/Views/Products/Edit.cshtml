@@ -1,22 +1,18 @@
 @model Modeles.Product; 
 @{
-    ViewData["Title"] = "Prodyct Informations";
+    ViewData["Title"] = "Edit";
 }
 
-<div class="card">
-    <div class="card-body">
-        <dl class="rox">
-            <dt class="col-sm-3">ID</dt>
-            <dt class="col-sm-9" aria-readonly="true">@Model.ID</dt>
-
-            <dt class="col-sm-3">Name</dt>
-            <dt class="col-sm-9">@Model.Name</dt>
-
-            <dt class="col-sm-3">Price</dt>
-            <dt class="col-sm-9">@Model.Price</dt>
-        </dl>
-        <a asp-action="Index" class="btn btn-secondary">Back</a>
-        <a asp-action="Edit" class="btn btn-primary" asp-route-id="@Model.ID">Edit</a>
-        <a asp-action="Delete" class="btn btn-danger" asp-route-id="@Model.ID">Delete</a>
+<form asp-action="Edit" method="post">
+<div class="mb-3">
+        <label asp-for="Name" class="form-label">Prodduct Name: </label>
+        <input asp-for="Name" type="text" class="form-control" autocomplete="false" value="@Model.Name">
     </div>
-</div>
+    <div class="mb-3"></div>
+        <label asp-for="Price" class="form-label">Price: </label>
+        <input asp-for="Price" type="text" class="form-control" autocomplete="false" value="@Model.Price">
+    </div>
+
+    <button asp-action="Edit" type="submit" class="btn btn-primary">Save</button>
+    <a asp-action="index" class="btn btn-danger">Cancell</a>
+</form>

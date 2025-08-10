@@ -1,0 +1,15 @@
+@BaseUrl = http://localhost:5140
+
+### 
+GET {{BaseUrl}}/Users/12 
+
+### 
+GET {{BaseUrl}}/Name/koko
+
+### 
+GET {{BaseUrl}}/Guid/koko
+
+### 
+GET {{BaseUrl}}/Date/2025-12-25%2019:12:22
+
+### 

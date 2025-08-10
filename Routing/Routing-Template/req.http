@@ -1,0 +1,22 @@
+@Baseurl = http://localhost:5294
+###
+Get {{Baseurl}}/Date/2005-11-25
+
+###
+GET {{Baseurl}}/Products/2
+
+### 
+GET {{Baseurl}}/Users/12
+
+### 
+// 0composit
+GET {{Baseurl}}/composit/akokobkjkj
+
+###SINGLE 
+GET {{Baseurl}}/Single/test/template
+
+###All 
+
+GET {{Baseurl}}/All/qsdqsd/qsdqsd-qsdqsd
+
+
