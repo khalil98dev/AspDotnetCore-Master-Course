@@ -8,23 +8,23 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\GNT\\.nuget\\packages\\": {},
+    "C:\\Users\\md98k\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\AspCoreFirstProject\\Configurations\\AspDotnetCore-Master-Course\\08-ASPCRUDTEMPLATE\\ModelInMemory\\ModelInMemory.csproj",
+      "projectUniqueName": "D:\\AspDotnetCourse\\Configurations\\08-ASPCRUDTEMPLATE\\ModelInMemory\\ModelInMemory.csproj",
       "projectName": "ModelInMemory",
-      "projectPath": "D:\\AspCoreFirstProject\\Configurations\\AspDotnetCore-Master-Course\\08-ASPCRUDTEMPLATE\\ModelInMemory\\ModelInMemory.csproj",
-      "packagesPath": "C:\\Users\\GNT\\.nuget\\packages\\",
-      "outputPath": "D:\\AspCoreFirstProject\\Configurations\\AspDotnetCore-Master-Course\\08-ASPCRUDTEMPLATE\\ModelInMemory\\obj\\",
+      "projectPath": "D:\\AspDotnetCourse\\Configurations\\08-ASPCRUDTEMPLATE\\ModelInMemory\\ModelInMemory.csproj",
+      "packagesPath": "C:\\Users\\md98k\\.nuget\\packages\\",
+      "outputPath": "D:\\AspDotnetCourse\\Configurations\\08-ASPCRUDTEMPLATE\\ModelInMemory\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\GNT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\md98k\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -51,7 +51,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net9.0": {
@@ -75,7 +75,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

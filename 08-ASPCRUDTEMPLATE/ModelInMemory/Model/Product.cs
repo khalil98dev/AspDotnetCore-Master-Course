@@ -14,6 +14,11 @@ public class Product
         this.Name = Name;
         this.Price = Price;
     }
+
+    public Product()
+    {
+        
+    }
  
 }
 

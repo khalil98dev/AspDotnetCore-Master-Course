@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "U8gyD84df2M=",
+  "success": true,
+  "projectFilePath": "D:\\AspDotnetCourse\\Configurations\\M14-API_Versioning\\M01URIPathVersioningController\\M01URIPathVersioningController.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\md98k\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\5.1.0\\microsoft.aspnetcore.mvc.versioning.5.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
