@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "CuKRRvCMIogSiXRar8iWme0cdQ9GOC7OltOaSOx7Y3s=",
+  "Source": "ResourceFiltering",
+  "BasePath": "_content/ResourceFiltering",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
