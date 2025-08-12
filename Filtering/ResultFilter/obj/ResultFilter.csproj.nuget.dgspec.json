@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\AspDotnetCore-Master-Course\\Filtering\\ResultFilter\\ResultFilter.csproj": {}
+    "D:\\AspDotnetCourse\\Configurations\\Filtering\\ResultFilter\\ResultFilter.csproj": {}
   },
   "projects": {
-    "D:\\AspDotnetCore-Master-Course\\Filtering\\ResultFilter\\ResultFilter.csproj": {
+    "D:\\AspDotnetCourse\\Configurations\\Filtering\\ResultFilter\\ResultFilter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\AspDotnetCore-Master-Course\\Filtering\\ResultFilter\\ResultFilter.csproj",
+        "projectUniqueName": "D:\\AspDotnetCourse\\Configurations\\Filtering\\ResultFilter\\ResultFilter.csproj",
         "projectName": "ResultFilter",
-        "projectPath": "D:\\AspDotnetCore-Master-Course\\Filtering\\ResultFilter\\ResultFilter.csproj",
-        "packagesPath": "C:\\Users\\GNT\\.nuget\\packages\\",
-        "outputPath": "D:\\AspDotnetCore-Master-Course\\Filtering\\ResultFilter\\obj\\",
+        "projectPath": "D:\\AspDotnetCourse\\Configurations\\Filtering\\ResultFilter\\ResultFilter.csproj",
+        "packagesPath": "C:\\Users\\md98k\\.nuget\\packages\\",
+        "outputPath": "D:\\AspDotnetCourse\\Configurations\\Filtering\\ResultFilter\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\GNT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\md98k\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -88,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

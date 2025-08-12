@@ -1,0 +1,9 @@
+@BaseUrl= http://localhost:5192
+@Id= 1
+### GET STUDENTS 
+
+GET {{BaseUrl}}/api/students
+
+### GET STUDENT BY ID
+GET {{BaseUrl}}/api/students/{{Id}}
+

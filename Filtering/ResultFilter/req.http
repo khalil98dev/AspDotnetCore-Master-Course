@@ -1,4 +1,4 @@
-@BaseUrl = http://localhost:5229
+@BaseUrl = http://localhost:5013
 @ProductID = 1A2B3C4D-5E6F-7A8B-9C0D-890ABCDEF123	
 ### 
 OPTIONS {{BaseUrl}}/api/products 

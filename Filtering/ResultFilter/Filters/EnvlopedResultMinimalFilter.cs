@@ -1,37 +1,24 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace ResultFilter.Filters;
+namespace ResultFilter.Filters.EnvlopedResultMinimalFilter;
 
 public class EnvlopedResultMinimalFilter : IEndpointFilter
 {
+    public async ValueTask<object?> InvokeAsync(EndpointFilterInvocationContext context, EndpointFilterDelegate next)
     {
+        var result = await next(context);
 
-        var result = await next(context);   
-
-        if (result is ObjectResult objectResult && objectResult.Value is not null)
+        if (result is not ProblemDetails )
         {
-            // If the result is an ObjectResult, we can wrap it
-            var wrappedResult = new
+          
+            return new
             {
-                Success = true,
-                Data = objectResult.Value
-            };
-
-            return new JsonResult(wrappedResult)
-            {
-                StatusCode = objectResult.StatusCode
+                success = true,
+                data = result,
+                message = "Operation completed successfully."
             };
         }
-        else if (result is null)
-        {
-            // If there is no result, we can set a default response
-            return new ObjectResult(new { Success = true, Data = "No content" })
-            {
-                StatusCode = 204 // No Content
-            };
-        }   
-
-
+        return result;
     }
 }
