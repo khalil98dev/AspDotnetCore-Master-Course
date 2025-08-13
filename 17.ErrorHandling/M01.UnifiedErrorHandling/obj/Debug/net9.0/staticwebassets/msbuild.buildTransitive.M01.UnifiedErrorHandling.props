@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\M01.UnifiedErrorHandling.props" />
+</Project>

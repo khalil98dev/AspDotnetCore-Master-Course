@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "M02.DeveloperExceptionPage/1.0.0": {
+        "runtime": {
+          "M02.DeveloperExceptionPage.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "M02.DeveloperExceptionPage/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

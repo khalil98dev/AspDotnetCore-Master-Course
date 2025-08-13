@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "uB16jnw9b54HX8yYkfpxLuUgTDRRWxRcfV9Nvh3iYIU=",
+  "Source": "Rfc9457Minimal",
+  "BasePath": "_content/Rfc9457Minimal",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

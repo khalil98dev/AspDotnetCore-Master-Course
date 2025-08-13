@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\M02.DeveloperExceptionPage.props" />
+</Project>

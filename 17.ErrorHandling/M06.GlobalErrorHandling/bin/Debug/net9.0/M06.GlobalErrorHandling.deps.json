@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "M06.GlobalErrorHandling/1.0.0": {
+        "runtime": {
+          "M06.GlobalErrorHandling.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "M06.GlobalErrorHandling/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
