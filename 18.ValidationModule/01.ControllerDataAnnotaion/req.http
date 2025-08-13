@@ -1,0 +1,23 @@
+
+@baseURl= http://localhost:5262 
+
+###POST PRODUCT 
+
+POST {{baseURl}}/api/products
+Content-Type: application/json
+
+{
+    "Name" :"Smart watch", 
+    "Description":"newest", 
+    "SKU" : "PRD-00012", 
+    "Price":1500.0,
+    "StockQuantity" : 1, 
+    "LaunchDate": "2025-11-11",
+    "ProductCategory" : "Electronics", 
+    "ImageUrl": "https://www.unsplash/images/khalil.png", 
+    "Wieght" : 0.4, 
+    "WarrantyPersiodMonths": 0, 
+    "IsReturnable":true, 
+    "ReturnPolicyDescription":"qs",
+    "Tags":["watchs","smart","koko"]
+}
