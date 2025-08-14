@@ -1,0 +1,27 @@
+@BaseUrl = https://localhost:7049
+
+### Login 
+
+GET {{BaseUrl}}/login
+
+### LogOut 
+GET {{BaseUrl}}/logOut
+
+
+### User Data
+GET {{BaseUrl}}/user
+
+### Secure page
+GET {{BaseUrl}}/secure
+
+### Suber-Visor-Only
+GET {{BaseUrl}}/AdminOnly
+
+### Admin-Only 
+GET {{BaseUrl}}/SuberVisorOnly
+
+### Drivers 
+POSt {{BaseUrl}}/drivers/class-a
+
+### Drivers 
+POSt {{BaseUrl}}/drivers/class-b

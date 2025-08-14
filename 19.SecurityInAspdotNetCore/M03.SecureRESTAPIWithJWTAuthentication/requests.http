@@ -1,0 +1,58 @@
+@baseUrl = https://localhost:5151
+
+@projectId = f5aae296-97dc-4a2b-a15a-b20ce4780d3a
+@taskId = b7cc98df-bcce-4bed-be26-d734797549c8
+
+
+###
+
+
+
+###
+
+###
+
+
+###
+GET {{baseUrl}}/api/projects
+
+###
+GET {{baseUrl}}/api/projects/{{projectId}}
+
+###
+POST {{baseUrl}}/api/projects
+
+###
+PUT {{baseUrl}}/api/projects/{{projectId}}
+
+###
+DELETE {{baseUrl}}/api/projects/{{projectId}}
+
+###
+POST {{baseUrl}}/api/projects/{{projectId}}/members
+
+###
+GET {{baseUrl}}/api/projects/{{projectId}}/budget
+
+###
+POST {{baseUrl}}/api/projects/tasks
+Content-Type: application/json
+
+###
+GET {{baseUrl}}/api/projects/tasks/{{taskId}}
+
+###
+PUT {{baseUrl}}/api/projects/tasks/{{taskId}}
+Content-Type: application/json
+
+###
+DELETE {{baseUrl}}/api/projects/tasks/{{taskId}}
+
+###
+POST {{baseUrl}}/api/projects/tasks/{{taskId}}/assign
+Content-Type: application/json
+
+###
+PUT {{baseUrl}}/api/projects/tasks/{{taskId}}/status
+Content-Type: application/json
+

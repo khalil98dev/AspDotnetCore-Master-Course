@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "WcpK0nECSFkgUjIYpEvK2fKnsvCVS+8CehT4J7s9uF4=",
+  "Source": "M03.SecureRESTAPIWithJWTAuthentication",
+  "BasePath": "_content/M03.SecureRESTAPIWithJWTAuthentication",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
