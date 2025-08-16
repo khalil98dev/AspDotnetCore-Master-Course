@@ -12,6 +12,7 @@ public class ProjectsController : ControllerBase
 {
 
     [HttpGet]
+    [Authorize(Policy = Permission.Project.Read)]
     public IActionResult GetProjects()
     {
         return Ok(new
@@ -24,7 +25,7 @@ public class ProjectsController : ControllerBase
 
 
     [HttpGet("{id}")]
-   
+    [Authorize(Policy = Permission.Project.Read)]
     public IActionResult GetProjectById(string id)
     {
         return Ok(new
@@ -36,7 +37,8 @@ public class ProjectsController : ControllerBase
     }
 
     [HttpPost] 
-    public IActionResult CreateProject()
+    [Authorize(Policy = Permission.Project.Create)]
+    public IActionResult CreateProject() 
     {
         return CreatedAtAction(
             nameof(GetProjectById),
@@ -50,6 +52,7 @@ public class ProjectsController : ControllerBase
     }
 
     [HttpPut("{id}")]
+    [Authorize(Policy = Permission.Project.Update)]
     public IActionResult UpdateProject(string id)
     {
         return Ok(new
@@ -62,6 +65,7 @@ public class ProjectsController : ControllerBase
 
 
     [HttpDelete("{id}")]
+      [Authorize(Policy = Permission.Project.Delete)]
     public IActionResult DeleteProject(string id)
     {
         var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
@@ -75,6 +79,7 @@ public class ProjectsController : ControllerBase
     }
 
     [HttpPost("{id}/members")]
+    [Authorize(Policy = Permission.Project.AssignMember)]
     public IActionResult AssignMember(string id)
     {
         return CreatedAtAction(
@@ -90,6 +95,7 @@ public class ProjectsController : ControllerBase
     }
 
     [HttpGet("{id}/budget")]
+    [Authorize(Policy = Permission.Project.ManageBudget)]
     public IActionResult GetProjectBudget(string id)
     {
         return Ok(new
@@ -101,6 +107,7 @@ public class ProjectsController : ControllerBase
     }
 
     [HttpGet("tasks/{taskId}")]
+    [Authorize(Policy = Permission.Task.Read)]
     public IActionResult GetTask(string taskId)
     {
         return Ok(new
@@ -112,6 +119,7 @@ public class ProjectsController : ControllerBase
     }
 
     [HttpPost("tasks")]
+     [Authorize(Policy = Permission.Task.Create)]
     public IActionResult CreateTask()
     {
         var taskId = Guid.NewGuid().ToString();
@@ -123,7 +131,7 @@ public class ProjectsController : ControllerBase
             Permission = Permission.Task.Create // Using constant for consistency
         });
     }
-
+ [Authorize(Policy = Permission.Task.AssignUser)]
     [HttpPost("tasks/{taskId}/assign")]
     public IActionResult AssignUserToTask(string taskId)
     {
@@ -136,6 +144,7 @@ public class ProjectsController : ControllerBase
     }
 
     [HttpPut("tasks/{taskId}")]
+     [Authorize(Policy = Permission.Task.Update)]
     public IActionResult UpdateTask(string taskId)
     {
         return Ok(new
@@ -147,6 +156,7 @@ public class ProjectsController : ControllerBase
     }
 
     [HttpDelete("tasks/{taskId}")]
+     [Authorize(Policy = Permission.Task.Delete)]
     public IActionResult DeleteTask(string taskId)
     {
         return Ok(new
@@ -159,6 +169,7 @@ public class ProjectsController : ControllerBase
 
 
     [HttpPut("tasks/{taskId}/status")]
+     [Authorize(Policy = Permission.Task.Update)]
     public IActionResult UpdateTaskStatus(string taskId)
     {
         return Ok(new
@@ -170,6 +181,7 @@ public class ProjectsController : ControllerBase
     }
 
     // Helper method to extract user information from the claims principal
+
     private string GetUserInfo()
     {
         if (User.Identity is { IsAuthenticated: false })

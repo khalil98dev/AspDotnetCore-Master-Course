@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\AspDotnetCourse\\Configurations\\Filtering\\ResultFilterController\\ResultFilterController.csproj": {}
+    "D:\\AspDotnetCourse\\AspDotnetCore-Master-Course\\16.Filtering\\ResultFilterController\\ResultFilterController.csproj": {}
   },
   "projects": {
-    "D:\\AspDotnetCourse\\Configurations\\Filtering\\ResultFilterController\\ResultFilterController.csproj": {
+    "D:\\AspDotnetCourse\\AspDotnetCore-Master-Course\\16.Filtering\\ResultFilterController\\ResultFilterController.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\AspDotnetCourse\\Configurations\\Filtering\\ResultFilterController\\ResultFilterController.csproj",
+        "projectUniqueName": "D:\\AspDotnetCourse\\AspDotnetCore-Master-Course\\16.Filtering\\ResultFilterController\\ResultFilterController.csproj",
         "projectName": "ResultFilterController",
-        "projectPath": "D:\\AspDotnetCourse\\Configurations\\Filtering\\ResultFilterController\\ResultFilterController.csproj",
+        "projectPath": "D:\\AspDotnetCourse\\AspDotnetCore-Master-Course\\16.Filtering\\ResultFilterController\\ResultFilterController.csproj",
         "packagesPath": "C:\\Users\\md98k\\.nuget\\packages\\",
-        "outputPath": "D:\\AspDotnetCourse\\Configurations\\Filtering\\ResultFilterController\\obj\\",
+        "outputPath": "D:\\AspDotnetCourse\\AspDotnetCore-Master-Course\\16.Filtering\\ResultFilterController\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -38,13 +38,7 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net9.0": {
@@ -60,15 +54,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

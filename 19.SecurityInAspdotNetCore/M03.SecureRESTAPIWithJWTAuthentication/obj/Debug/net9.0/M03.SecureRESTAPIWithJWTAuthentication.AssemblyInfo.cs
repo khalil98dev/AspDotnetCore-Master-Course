@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("M03.SecureRESTAPIWithJWTAuthentication")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5742b487d1d8e7b82efba787ed7ec241deb8da17")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb7a26f2c72545aff77e85656b974c9524bee9b3")]
 [assembly: System.Reflection.AssemblyProductAttribute("M03.SecureRESTAPIWithJWTAuthentication")]
 [assembly: System.Reflection.AssemblyTitleAttribute("M03.SecureRESTAPIWithJWTAuthentication")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

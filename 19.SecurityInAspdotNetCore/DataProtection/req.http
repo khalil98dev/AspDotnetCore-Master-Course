@@ -1,0 +1,40 @@
+@BaseUrl = http://localhost:5259 
+
+
+### 
+
+GET {{BaseUrl}}/api/bids
+
+### 
+GET {{BaseUrl}}/api/bids/dde16d37-a07a-44d4-ae50-71d663f98de1
+
+
+### POSt 
+
+POST  {{BaseUrl}}/api/bids/bid/
+Content-Type: application/json;
+
+{
+    "FirstName" :"khalil",
+    "LastName":"bachir",
+    "Email" :"khalil98dev@gmail.com",
+    "Phone" :"0667503327",
+    "Address" :"hammam sokhna",
+    "Ammount" : "1500.02m"
+}
+
+###
+POST  {{BaseUrl}}/api/bids/bid/
+Content-Type: application/json;
+
+{
+    "FirstName" :"khalil",
+    "LastName":"bachir",
+    "Email" :"khalil98dev@gmail.com",
+    "Phone" :"0667503327",
+    "Address" :"hammam sokhna",
+    "Ammount" : "1500.02"
+}
+
+### 
+Get {{BaseUrl}}/api/bids/dde16d37-a07a-44d4-ae50-71d663f98de1

@@ -17,10 +17,10 @@ public class JwtServiceProvider(IConfiguration Configuration)
     {
         IConfigurationSection JwtSettings = Configuration.GetSection("JwtSettings");
 
-        var Issuer = JwtSettings["Isseur"]!;
-        var Key = JwtSettings["Secretkey"]!;
+        var Issuer = JwtSettings["Issuer"]!;
+        var Key = JwtSettings["SecretKey"]!;
         var Audience = JwtSettings["Audience"]!;
-        var Expires = DateTime.UtcNow.AddMinutes(int.Parse(JwtSettings["ExpiredTokenInMinutes"]!.ToString()));
+        var Expires = DateTime.UtcNow.AddMinutes(int.Parse(JwtSettings["TokenExpirationInMinutes"]!.ToString()));
 
 
         var calims = new List<Claim>
@@ -28,9 +28,7 @@ public class JwtServiceProvider(IConfiguration Configuration)
             new (JwtRegisteredClaimNames.Sub,request.Id!),
             new (JwtRegisteredClaimNames.Email,request.Email!),
             new (JwtRegisteredClaimNames.FamilyName,request.LastName!),
-            new (JwtRegisteredClaimNames.GivenName,request.FirstName!),
-            new (JwtRegisteredClaimNames.Sub,request.Id!),
-
+            new (JwtRegisteredClaimNames.GivenName,request.FirstName!)
         };
 
         request.Roles.ForEach(r => calims.Add(new(ClaimTypes.Role, r)));
@@ -57,11 +55,10 @@ public class JwtServiceProvider(IConfiguration Configuration)
         return new TokenResponse
         {
             AccessToken = TokenHandler.WriteToken(Security),
-            RefreshToken = "2168123134687614631",
+            RefreshToken = "b3e1c2d4-5f6a-7b8c-9d0e-1f2a3b4c5d6e",
             Expires = Expires
         };
         
-
     }   
 }
 
