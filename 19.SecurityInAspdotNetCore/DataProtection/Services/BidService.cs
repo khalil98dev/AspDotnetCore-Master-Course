@@ -1,25 +1,32 @@
 using DataProtection.Modules;
 using DataProtection.Requestes;
 using DataProtection.Responses;
+using Microsoft.AspNetCore.DataProtection;
 using Microsoft.EntityFrameworkCore;
 
 namespace DataProtection.Services;
 
-public class BidService(Data.AppContext _context) : IBidService
+public class BidService(Data.AppContext _context,IDataProtectionProvider dataProtectionProvider) : IBidService
 {
+    private readonly IDataProtector _protector =
+     dataProtectionProvider.CreateProtector("Bidding.Protector");
 
     public async Task<BidResponse> AddNewBidAsync(BidRequest request, CancellationToken ct)
     {
         var newBid = new Bid
         {
             ID = Guid.NewGuid(),
-            FirstName = request.FirstName,
-            LastName = request.LastName,
-            Ammount = request.Ammount,
-            Address = request.Address,
-            Phone = request.Phone,
-            BidDate = DateTime.UtcNow
 
+            FirstName = _protector.Protect(request.FirstName!),
+            LastName = _protector.Protect(request.LastName!),
+
+            Ammount = request.Ammount,
+
+            Address = _protector.Protect(request.Address!),
+            Phone = _protector.Protect(request.Phone!),
+            Email = _protector.Protect(request.Email!),
+
+            BidDate = DateTime.UtcNow
         };
 
 
@@ -27,7 +34,7 @@ public class BidService(Data.AppContext _context) : IBidService
 
         if (await _context.SaveChangesAsync(ct) > 0)
         {
-            return BidResponse.FromModel(newBid);
+            return BidResponse.FromModel(newBid,_protector);
         }
         else
             return null;   
@@ -37,7 +44,7 @@ public class BidService(Data.AppContext _context) : IBidService
     {
         var itmes =await  _context.Bids.ToListAsync(ct);
 
-        return BidResponse.FromModels(itmes); 
+        return BidResponse.FromModels(itmes,_protector); 
 
     }
 
@@ -45,7 +52,7 @@ public class BidService(Data.AppContext _context) : IBidService
     {
         var BidItem = await _context.Bids.FirstOrDefaultAsync(p => p.ID == ID, ct);
 
-        return  BidResponse.FromModel(BidItem); 
+        return  BidResponse.FromModel(BidItem,_protector); 
     }
 
 }

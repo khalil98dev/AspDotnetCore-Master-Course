@@ -1,5 +1,6 @@
 using System.Reflection.Metadata.Ecma335;
 using DataProtection.Modules;
+using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace DataProtection.Responses;
@@ -15,7 +16,7 @@ public class BidResponse
     public string? Phone { get; set; }
     public string? Address { get; set; }
 
-    static public  BidResponse FromModel(Bid? bidModel)
+    static public  BidResponse FromModel(Bid? bidModel,IDataProtector protector)
     {
         if (bidModel is null)
             throw new ArgumentException("Model ca'nt be null");
@@ -23,24 +24,26 @@ public class BidResponse
         var response= new BidResponse
         {
             ID = bidModel.ID,
-            FirstName = bidModel.FirstName,
-            LastName = bidModel.LastName,
-            Address = bidModel.Address,
+            FirstName = protector.Unprotect(bidModel.FirstName!),
+            LastName = protector.Unprotect(bidModel.LastName!),
+            Address = protector.Unprotect(bidModel.Address!),
+           
             Ammount = bidModel.Ammount,
             BidDate = bidModel.BidDate,
-            Email = bidModel.Email,
-            Phone = bidModel.Phone
+
+            Email = protector.Unprotect(bidModel.Email!),
+            Phone = protector.Unprotect(bidModel.Phone!)
         };
         return response;
     }
 
-    static public IEnumerable<BidResponse> FromModels(IEnumerable<Bid>? bidModeles)
+    static public IEnumerable<BidResponse> FromModels(IEnumerable<Bid>? bidModeles,IDataProtector protector)
     {
         if (bidModeles is null)
         {
             throw new ArgumentException("Model ca'nt be null");
         }
-        IEnumerable<BidResponse> responses = bidModeles.Select(FromModel);
+        IEnumerable<BidResponse> responses = bidModeles.Select(p=>FromModel(p,protector));
         return responses!;    
     }
 }

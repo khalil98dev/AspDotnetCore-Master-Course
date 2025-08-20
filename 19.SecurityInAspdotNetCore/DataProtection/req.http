@@ -6,7 +6,7 @@
 GET {{BaseUrl}}/api/bids
 
 ### 
-GET {{BaseUrl}}/api/bids/dde16d37-a07a-44d4-ae50-71d663f98de1
+GET {{BaseUrl}}/api/bids/86CC721A-932C-4B32-B143-F09465584F15	
 
 
 ### POSt 
@@ -20,7 +20,7 @@ Content-Type: application/json;
     "Email" :"khalil98dev@gmail.com",
     "Phone" :"0667503327",
     "Address" :"hammam sokhna",
-    "Ammount" : "1500.02m"
+    "Ammount" : "1500.02"
 }
 
 ###
